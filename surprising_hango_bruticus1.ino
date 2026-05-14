@@ -1,8 +1,9 @@
 #define R 3
 #define A 2 
 #define V 4 
-int luz; int 
-  temp; int cel; 
+int luz; 
+int temp; 
+int cel; 
 int valorluz; 
 void setup() 
 { 
