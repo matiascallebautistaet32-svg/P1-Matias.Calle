@@ -30,7 +30,6 @@ void loop()
   ValorRojo = analogRead(PR);
   ValorVerde = analogRead(PV);
   ValorAzul = analogRead(PA);
-  ValorBoton = digitalRead(pinBoton);
   ValorRojo =  map(ValorRojo,0 ,1023 ,0 ,255);
   ValorAzul = map(ValorAzul,0 ,1023 ,0 ,255);
   ValorVerde = map(ValorVerde,0 ,1023 ,0 ,255);
@@ -54,6 +53,6 @@ void PrendeApaga()
   analogWrite(A,ValorAzul);
   delay(10000);
   analogWrite(R,0);
-  analogWrite(R,0);
-  analogWrite(R,0);
+  analogWrite(V,0);
+  analogWrite(A,0);
 }
