@@ -41,11 +41,16 @@ void eleccion()
   int nuevoEjercicio = -1;
 
   
-  if(valorpote >= 0 && valorpote <= 20)      nuevoEjercicio = 1;
-  else if(valorpote > 20 && valorpote <= 40) nuevoEjercicio = 2;
-  else if(valorpote > 40 && valorpote <= 60) nuevoEjercicio = 3;
-  else if(valorpote > 60 && valorpote <= 80) nuevoEjercicio = 4;
-  else if(valorpote > 80 && valorpote <= 100) nuevoEjercicio = 5;
+  if(valorpote >= 0 && valorpote <= 20)    
+      nuevoEjercicio = 1;
+  else if(valorpote > 20 && valorpote <= 40)
+      nuevoEjercicio = 2;
+  else if(valorpote > 40 && valorpote <= 60)
+      nuevoEjercicio = 3;
+  else if(valorpote > 60 && valorpote <= 80)
+      nuevoEjercicio = 4;
+  else if(valorpote > 80 && valorpote <= 100)
+      nuevoEjercicio = 5;
 
 
   if (nuevoEjercicio != ejercicioActual) 
@@ -91,7 +96,7 @@ void eleccion()
   indiceLista = (indiceLista + 1) % 5;
 }
 
-// 2. Promedio de notas y asignación de colores específicos
+
 void ejercicio2()
 {
   int notas[10] = {10, 9, 6, 3, 8, 1, 4, 9, 6, 7};
