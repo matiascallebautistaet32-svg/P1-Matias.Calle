@@ -4,9 +4,9 @@ unsigned long tiempoAnterior = 0;
 int indiceLista = 0;
 
 
-#define R 11  // Cable Rojo en Pin 11
-#define A 10  // Cable Azul en Pin 10
-#define V 9   // Cable Verde en Pin 9
+#define R 11  
+#define A 10  
+#define V 9  
 #define pote A0
 
 void setup()
