@@ -1,36 +1,26 @@
-#define boton1 2
-#define boton2 4
-#define boton3 7
-
-
 #define ARRAY_LEN(array) (sizeof(array) / sizeof(array[0]))
+#define boton1 3
+#define boton2 5
+#define boton3 6
 #define C3 131
 #define G3 196
 #define A3 220
 #define F3 175
 #define E3 165
 #define D3 147
-
-
-#define ARRAY_LEN(array) (sizeof(array) / sizeof(array[0]))
 #define E3 165
 #define F3 175
 #define G3 196
 #define D3 147
 #define C3 131
-
-
-#define ARRAY_LEN(array) (sizeof(array) / sizeof(array[0]))
 #define G3 196
 #define F3 175
 #define E3 165
 #define D3 147
 
-
-int valorboton1 = LOW;
-int valorboton2 = LOW;
-int valorboton3 = LOW;
-
+int valorboton1;
+int valorboton2;
+int valorboton3;
 
 const int midi1[21][3] = {
  {C3, 136, 0},
@@ -140,17 +130,17 @@ void loop()
   delay(1000);
 
   
-  if(valorboton1 == HIGH)
+  if(valorboton1 == LOW)
   {
    playMidi(11, midi1, ARRAY_LEN(midi1));
    delay(1000);
   }
-  if(valorboton2 == HIGH)
+  if(valorboton2 == LOW)
   {
    playMidi(11, midi2, ARRAY_LEN(midi2));
    delay(1000);
   }
-  if(valorboton3 == HIGH)
+  if(valorboton3 == LOW)
   {
    playMidi(11, midi3, ARRAY_LEN(midi3));
    delay(1000);
